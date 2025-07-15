@@ -5,48 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Samra Ahmed | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="description" content="Samra Ahmed – Developer, Designer, Dreamer. Explore projects, skills, and creativity.">
+  <meta name="author" content="Samra Ahmed">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <!-- HERO / HEADER -->
   <header class="hero">
-    <h1>Samra Ahmed</h1>
+    <h1>Hi, I'm Samra Ahmed</h1>
     <p class="hero-tagline">🚀 Developer & Designer — Building Bold Digital Experiences</p>
     <a href="#projects" class="btn-primary">Explore My Work</a>
   </header>
 
-  <section class="about">
+  <!-- ABOUT SECTION -->
+  <section class="intro">
     <h2>About Me</h2>
-    <p>I'm a Computer Science student with a creative eye and a passion for clean code. From HTML/CSS websites to resume designs, SQL databases to pitch decks — I do it all. I'm not just a learner, I'm a builder.</p>
+    <p>
+      I'm a <strong>Computer Science student</strong> with a creative eye and a passion for clean, modern code.
+      From <span style="color:#ffb3ec; font-weight:600;">HTML/CSS websites</span> to
+      <span style="color:#ffb3ec; font-weight:600;">resume designs</span>,
+      <span style="color:#ffb3ec; font-weight:600;">SQL databases</span> to pitch decks —
+      <em>I do it all.</em> <br />
+      I don't just learn tech — <strong>I use it to build real things that matter.</strong>
+    </p>
   </section>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <img src="images/flyalbatross-preview.png" alt="FlyAlbatross Preview" />
-      <div class="project-info">
-        <h3>FlyAlbatross – Travel Agency Website</h3>
-        <p>Responsive travel agency site built with HTML & CSS. Clean layout, simple UI, and live demo hosted on GitHub.</p>
-        <a href="https://github.com/samrakalwar/FlyAlbatros-TravelAgency" target="_blank">GitHub Repo</a> |
-        <a href="https://samrakalwar.github.io/FlyAlbatros-TravelAgency/" target="_blank">Live Demo</a>
-      </div>
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+
+    <!-- Project Box -->
+    <div class="project">
+      <img src="images/flyalbatross-preview.png" alt="FlyAlbatross Travel Agency Website">
+      <h3>FlyAlbatross – Travel Agency Website</h3>
+      <p>
+        Built a responsive, real-world travel agency website from scratch using <strong>HTML, CSS</strong> and pure creativity.
+        Designed with bold UI and optimized for performance.
+      </p>
+      <p>
+        🔗 <a href="https://github.com/samrakalwar/FlyAlbatros-TravelAgency" target="_blank">GitHub Repo</a> |
+        🌐 <a href="https://samrakalwar.github.io/FlyAlbatros-TravelAgency/" target="_blank">Live Demo</a>
+      </p>
     </div>
+    <!-- Add more project divs here as needed -->
   </section>
 
+  <!-- SKILLS SECTION -->
   <section class="skills">
-    <h2>Skills</h2>
-    <button class="skill-btn" onclick="showSkills()">✨ See What I Can Do</button>
+    <h2>💡 Skills & Tools</h2>
+    <div style="text-align:center; margin: 2rem;">
+      <button class="skill-btn" onclick="showSkills()">✨ See What I Can Do</button>
+    </div>
     <div id="skillsOutput" class="skills-output"></div>
   </section>
-
-  <section class="contact">
+<section class="contact">
     <h2>Contact</h2>
     <p>📧 Email:samraahmed569@gmail.com</p>
     <p>🌐 GitHub: SamraKalwar</p>
     <p>💼 Fiverr: Saamra Ahmed</p>
   </section>
 
+  <!-- TYPEWRITER EFFECT PLACEHOLDER -->
+  <h2 id="typewriter" style="text-align: center; margin-bottom: 2rem;"></h2>
+
+
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Samra Ahmed | All Rights Reserved 💛</p>
+    <p>Designed & Developed by <strong>Samra 💛</strong> | © 2025</p>
   </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>
