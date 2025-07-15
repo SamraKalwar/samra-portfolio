@@ -1,35 +1,39 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const skillBtn = document.getElementById("skillBtn");
-  const skillsOutput = document.getElementById("skillsOutput");
+let text = "I'm Samra Ahmed – Developer ✨ Designer ✨ Dreamer 💛";
+let i = 0;
 
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typewriter").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 80);
+  }
+}
+window.onload = typeWriter;
+
+
+function showSkills() {
   const skills = [
     "💻 C++",
+    "☕ Java",
     "🐍 Python",
     "🌐 HTML/CSS",
-    "🧠 JavaScript",
     "🗃️ SQL, MySQL, MongoDB",
-    "📄 Resume Designing",
+    "🧠 JavaScript",
     "🎨 Canva, Figma",
     "📊 PowerPoint, Word"
   ];
 
-  skillBtn.addEventListener("click", () => {
-    skillsOutput.innerHTML = "";
-    skillsOutput.style.opacity = 0;
-
-    setTimeout(() => {
-      skills.forEach((skill, index) => {
-        const box = document.createElement("div");
-        box.className = "skill-box";
-        box.innerText = skill;
-        box.style.animation = `fadeIn 0.5s ease-in-out ${index * 0.15}s forwards`;
-        box.style.opacity = 0;
-        skillsOutput.appendChild(box);
-      });
-
-      skillsOutput.style.opacity = 1;
-    }, 200);
-  });
-});
-
+  const container = document.getElementById("skillsOutput");
+  container.innerHTML = "";
+  container.style.opacity = 0;
+  setTimeout(() => {
+    skills.forEach(skill => {
+      const box = document.createElement("div");
+      box.className = "skill-box";
+      box.innerText = skill;
+      container.appendChild(box);
+    });
+    container.style.opacity = 1;
+  }, 200);
+}
 
